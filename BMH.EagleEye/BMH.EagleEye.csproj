@@ -1,0 +1,677 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C6746F0F-47DD-4348-A1B9-9C6F4E3995CF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BMH.EagleEye</RootNamespace>
+    <AssemblyName>BMH.EagleEye</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ajax">
+      <HintPath>..\References\Cvb\Ajax.dll</HintPath>
+    </Reference>
+    <Reference Include="BMH.Redis, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Redis\BMH.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="CVBUtility">
+      <HintPath>..\References\Cvb\CVBUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MongoDB.Bson">
+      <HintPath>..\References\Mongo\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver">
+      <HintPath>..\References\Mongo\MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoUtility">
+      <HintPath>..\References\Mongo\MongoUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="TY.DataOperator">
+      <HintPath>..\References\Mongo\TY.DataOperator.dll</HintPath>
+    </Reference>
+    <Reference Include="VVFF.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\VVFF.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="XCore, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\XCore.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="api\Manager.asmx" />
+    <Content Include="api\Report.asmx" />
+    <Content Include="default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="page\agent\adedit.aspx" />
+    <Content Include="page\agent\adinfo.aspx" />
+    <Content Include="page\agent\deduct.aspx" />
+    <Content Include="page\agent\index.aspx" />
+    <Content Include="page\agent\link.aspx" />
+    <Content Include="page\agent\linkdetail.aspx" />
+    <Content Include="page\agent\rechargedetail.aspx" />
+    <Content Include="page\changepwd.aspx" />
+    <Content Include="page\css\ad-bidding.css" />
+    <Content Include="page\css\agent-common.css" />
+    <Content Include="page\css\agent-index-v2.css" />
+    <Content Include="page\css\agent-index.css" />
+    <Content Include="page\css\agent-style.css" />
+    <Content Include="page\css\bootstrap\bootstrap-3.0.1.min.css" />
+    <Content Include="page\css\datepicker.css" />
+    <Content Include="page\css\login.css" />
+    <Content Include="page\css\play-video.css" />
+    <Content Include="page\css\style-1.css" />
+    <Content Include="page\css\style.load.css" />
+    <Content Include="page\fonts\iconfont.svg" />
+    <Content Include="page\images\blank.png" />
+    <Content Include="page\images\bycx.png" />
+    <Content Include="page\images\cjwh.png" />
+    <Content Include="page\images\czxx.png" />
+    <Content Include="page\images\dd.png" />
+    <Content Include="page\images\header-bg.jpg" />
+    <Content Include="page\images\ht.jpg" />
+    <Content Include="page\images\hzmh.png" />
+    <Content Include="page\images\hzxl.png" />
+    <Content Include="page\images\hzzj.png" />
+    <Content Include="page\images\jk.png" />
+    <Content Include="page\images\jxwl.png" />
+    <Content Include="page\images\lc1.jpg" />
+    <Content Include="page\images\lc2.jpg" />
+    <Content Include="page\images\lc3.jpg" />
+    <Content Include="page\images\logo.png" />
+    <Content Include="page\images\qmhd.png" />
+    <Content Include="page\images\rzgg.png" />
+    <Content Include="page\images\shenfz1.jpg" />
+    <Content Include="page\images\shenfz2.jpg" />
+    <Content Include="page\images\tips.png" />
+    <Content Include="page\images\user-icon-v2.png" />
+    <Content Include="page\images\xahw.png" />
+    <Content Include="page\images\xaxy.png" />
+    <Content Include="page\images\yingyan-logo.png" />
+    <Content Include="page\images\yrhy.png" />
+    <Content Include="page\images\YY-pic.png" />
+    <Content Include="page\images\yyzz.jpg" />
+    <Content Include="page\images\ziti.png" />
+    <Content Include="page\js\agent\adedit.js" />
+    <Content Include="page\js\agent\newAd.js" />
+    <Content Include="page\js\bootstrap\bootstrap-3.0.1.min.js" />
+    <Content Include="page\js\echarts\echarts-1.1.js" />
+    <Content Include="page\js\echarts\echarts-1.2.js" />
+    <Content Include="page\js\manager\v2.0\accountManage.js" />
+    <Content Include="page\js\manager\v2.0\adComon.js" />
+    <Content Include="page\js\manager\v2.0\adPageManage.js" />
+    <Content Include="page\js\manager\v2.0\advertisingCommon.js" />
+    <Content Include="page\js\manager\v2.0\ad_bidding.js" />
+    <Content Include="page\js\manager\v2.0\agent_base.js" />
+    <Content Include="page\js\manager\v2.0\agent_edit.js" />
+    <Content Include="page\js\manager\v2.0\comon.js" />
+    <Content Include="page\js\manager\v2.0\data-analysis.js" />
+    <Content Include="page\js\manager\v2.0\home.min.js" />
+    <Content Include="page\js\manager\v2.0\jquery.daterangepicker.manager.js" />
+    <Content Include="page\js\manager\v2.0\jquery.daterangepicker.agent.js" />
+    <Content Include="page\js\manager\v2.0\jquery.daterangepicker.users.js" />
+    <Content Include="page\js\manager\v2.0\ad_base.js" />
+    <Content Include="page\js\manager\v2.0\materialManage.js" />
+    <Content Include="page\js\manager\v2.0\wlCommon.js" />
+    <Content Include="page\js\report\v2.0\adComon.js" />
+    <Content Include="page\js\report\v2.0\jquery.daterangepicker.report.js" />
+    <Content Include="page\js\report\v2.0\wlCommon.js" />
+    <Content Include="page\LogOut.aspx" />
+    <Content Include="page\manager\adlocation_info.aspx" />
+    <Content Include="page\js\base\v2.0\ajaxfileupload.js" />
+    <Content Include="page\js\manager\v2.0\newAd.js" />
+    <Content Include="page\manager\adu_add.aspx" />
+    <Content Include="page\manager\adu_setting.aspx" />
+    <Content Include="page\manager\ad_edit.aspx" />
+    <Content Include="page\js\manager\v2.0\ad-management.js" />
+    <Content Include="page\manager\ad_info.aspx" />
+    <Content Include="page\css\home-min.css" />
+    <Content Include="page\css\jquery.datetimepicker.css" />
+    <Content Include="page\css\normalize-report.css" />
+    <Content Include="page\css\normalize.css" />
+    <Content Include="page\css\page.css" />
+    <Content Include="page\css\style.css" />
+    <Content Include="page\css\user-style.css" />
+    <Content Include="page\images\adData-icon.png" />
+    <Content Include="page\images\data1.png" />
+    <Content Include="page\images\edit.png" />
+    <Content Include="page\images\head.jpg" />
+    <Content Include="page\images\pic1.png" />
+    <Content Include="page\images\sort_asc.png" />
+    <Content Include="page\images\sort_asc_disabled.png" />
+    <Content Include="page\images\sort_both.png" />
+    <Content Include="page\images\sort_desc.png" />
+    <Content Include="page\images\sort_desc_disabled.png" />
+    <Content Include="page\images\user-icon.png" />
+    <Content Include="page\images\YY-pic-1.png" />
+    <Content Include="page\js\report\v2.0\advertisingCommon.js" />
+    <Content Include="page\js\base\v2.0\demo.js" />
+    <Content Include="page\js\base\v2.0\page.base.js" />
+    <Content Include="page\js\echarts\echarts.js" />
+    <Content Include="page\js\jquery\jquery-1.11.1.min.js" />
+    <Content Include="page\js\jquery\jquery.dataTables.js" />
+    <Content Include="page\js\jquery\jquery.dataTables.min.js" />
+    <Content Include="page\js\jquery\jquery.daterangepicker.js" />
+    <Content Include="page\js\jquery\jquery.datetimepicker.full.js" />
+    <Content Include="page\js\jquery\jquery.easing.min.js" />
+    <Content Include="page\js\jquery\jquery.nicescroll.js" />
+    <Content Include="page\js\manager\v2.0\ad_edit.js" />
+    <Content Include="page\js\manager\v2.0\managerbase.js" />
+    <Content Include="page\js\manager\v2.0\material.Manger.js" />
+    <Content Include="page\js\moment\moment.min.js" />
+    <Content Include="page\js\users\v2.0\demo.js" />
+    <Content Include="page\js\users\v2.0\jquery.daterangepicker.manager.js" />
+    <Content Include="page\js\users\v2.0\jquery.daterangepicker.users.js" />
+    <Content Include="page\js\users\v2.0\users.base.js" />
+    <Content Include="page\js\users\v2.0\users_data.base.js" />
+    <Content Include="page\js\users\v2.0\users_data.js" />
+    <Content Include="page\manager\agent_edit.aspx" />
+    <Content Include="page\manager\agent_info.aspx" />
+    <Content Include="page\manager\bidding_info.aspx" />
+    <Content Include="page\manager\index.aspx" />
+    <Content Include="page\manager\material_analy.aspx" />
+    <Content Include="page\manager\material_info.aspx" />
+    <Content Include="page\manager\recharge.aspx" />
+    <Content Include="page\Other\SwitchAdUserId.aspx" />
+    <Content Include="page\report\adlocation_data.aspx" />
+    <Content Include="page\report\ad_data.aspx" />
+    <Content Include="page\login.aspx" />
+    <Content Include="page\report\material_data.aspx" />
+    <Content Include="page\resetpwd.aspx" />
+    <Content Include="page\test\showimg.aspx" />
+    <Content Include="page\test\uploadimg.aspx" />
+    <Content Include="page\test\WebForm1.aspx" />
+    <Content Include="page\users\addeduct_info.aspx" />
+    <Content Include="page\users\recharge_info.aspx" />
+    <Content Include="page\users\users_data.aspx" />
+    <Content Include="page\upload.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="api\AgentHandler.ashx.cs">
+      <DependentUpon>AgentHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="api\BidHandler.ashx.cs">
+      <DependentUpon>BidHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="api\ImgHandler.ashx.cs">
+      <DependentUpon>ImgHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="api\Manager.asmx.cs">
+      <DependentUpon>Manager.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="api\ManagerHandler.ashx.cs">
+      <DependentUpon>ManagerHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="api\Manager\AdLocation.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="api\Manager\Advertisement.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="api\Manager\Direct.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="api\Material\MaterialHand.ashx.cs">
+      <DependentUpon>MaterialHand.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="api\Report.asmx.cs">
+      <DependentUpon>Report.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="api\Report\AdLocation.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="api\Report\AdUser.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="api\Report\Advertisement.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="api\Report\Material.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="api\Upload\UploadHandler.ashx.cs">
+      <DependentUpon>UploadHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="BaseClass\POMOHOClass.cs" />
+    <Compile Include="BaseClass\POMOHOCookie.cs" />
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="PageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pageclass\CommonBase.cs" />
+    <Compile Include="pageclass\LoginHelper.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\agent\adedit.aspx.cs">
+      <DependentUpon>adedit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\agent\adedit.aspx.designer.cs">
+      <DependentUpon>adedit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\agent\adinfo.aspx.cs">
+      <DependentUpon>adinfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\agent\adinfo.aspx.designer.cs">
+      <DependentUpon>adinfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\agent\deduct.aspx.cs">
+      <DependentUpon>deduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\agent\deduct.aspx.designer.cs">
+      <DependentUpon>deduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\agent\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\agent\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\agent\link.aspx.cs">
+      <DependentUpon>link.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\agent\link.aspx.designer.cs">
+      <DependentUpon>link.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\agent\linkdetail.aspx.cs">
+      <DependentUpon>linkdetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\agent\linkdetail.aspx.designer.cs">
+      <DependentUpon>linkdetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\agent\rechargedetail.aspx.cs">
+      <DependentUpon>rechargedetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\agent\rechargedetail.aspx.designer.cs">
+      <DependentUpon>rechargedetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\changepwd.aspx.cs">
+      <DependentUpon>changepwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\changepwd.aspx.designer.cs">
+      <DependentUpon>changepwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\LogOut.aspx.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\LogOut.aspx.designer.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\manager\adlocation_info.aspx.cs">
+      <DependentUpon>adlocation_info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\manager\adlocation_info.aspx.designer.cs">
+      <DependentUpon>adlocation_info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\manager\adu_add.aspx.cs">
+      <DependentUpon>adu_add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\manager\adu_add.aspx.designer.cs">
+      <DependentUpon>adu_add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\manager\adu_setting.aspx.cs">
+      <DependentUpon>adu_setting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\manager\adu_setting.aspx.designer.cs">
+      <DependentUpon>adu_setting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\manager\ad_edit.aspx.cs">
+      <DependentUpon>ad_edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\manager\ad_edit.aspx.designer.cs">
+      <DependentUpon>ad_edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\manager\ad_info.aspx.cs">
+      <DependentUpon>ad_info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\manager\ad_info.aspx.designer.cs">
+      <DependentUpon>ad_info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\manager\agent_edit.aspx.cs">
+      <DependentUpon>agent_edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\manager\agent_edit.aspx.designer.cs">
+      <DependentUpon>agent_edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\manager\agent_info.aspx.cs">
+      <DependentUpon>agent_info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\manager\agent_info.aspx.designer.cs">
+      <DependentUpon>agent_info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\manager\bidding_info.aspx.cs">
+      <DependentUpon>bidding_info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\manager\bidding_info.aspx.designer.cs">
+      <DependentUpon>bidding_info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\manager\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\manager\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\manager\MainPage.Master.cs">
+      <DependentUpon>MainPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\manager\MainPage.Master.designer.cs">
+      <DependentUpon>MainPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="page\manager\ManagerPage.Master.cs">
+      <DependentUpon>ManagerPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\manager\ManagerPage.Master.designer.cs">
+      <DependentUpon>ManagerPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="page\manager\material_analy.aspx.cs">
+      <DependentUpon>material_analy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\manager\material_analy.aspx.designer.cs">
+      <DependentUpon>material_analy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\manager\material_info.aspx.cs">
+      <DependentUpon>material_info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\manager\material_info.aspx.designer.cs">
+      <DependentUpon>material_info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\manager\recharge.aspx.cs">
+      <DependentUpon>recharge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\manager\recharge.aspx.designer.cs">
+      <DependentUpon>recharge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\Other\SwitchAdUserId.aspx.cs">
+      <DependentUpon>SwitchAdUserId.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\Other\SwitchAdUserId.aspx.designer.cs">
+      <DependentUpon>SwitchAdUserId.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\report\adlocation_data.aspx.cs">
+      <DependentUpon>adlocation_data.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\report\adlocation_data.aspx.designer.cs">
+      <DependentUpon>adlocation_data.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\report\ad_data.aspx.cs">
+      <DependentUpon>ad_data.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\report\ad_data.aspx.designer.cs">
+      <DependentUpon>ad_data.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\report\material_data.aspx.cs">
+      <DependentUpon>material_data.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\report\material_data.aspx.designer.cs">
+      <DependentUpon>material_data.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\resetpwd.aspx.cs">
+      <DependentUpon>resetpwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\resetpwd.aspx.designer.cs">
+      <DependentUpon>resetpwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\test\showimg.aspx.cs">
+      <DependentUpon>showimg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\test\showimg.aspx.designer.cs">
+      <DependentUpon>showimg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\test\uploadimg.ashx.cs">
+      <DependentUpon>uploadimg.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="page\test\uploadimg.aspx.cs">
+      <DependentUpon>uploadimg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\test\uploadimg.aspx.designer.cs">
+      <DependentUpon>uploadimg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\test\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\test\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\users\addeduct_info.aspx.cs">
+      <DependentUpon>addeduct_info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\users\addeduct_info.aspx.designer.cs">
+      <DependentUpon>addeduct_info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\users\recharge_info.aspx.cs">
+      <DependentUpon>recharge_info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\users\recharge_info.aspx.designer.cs">
+      <DependentUpon>recharge_info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\users\UsersPage.Master.cs">
+      <DependentUpon>UsersPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\users\UsersPage.Master.designer.cs">
+      <DependentUpon>UsersPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="page\users\users_data.aspx.cs">
+      <DependentUpon>users_data.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\users\users_data.aspx.designer.cs">
+      <DependentUpon>users_data.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\upload.aspx.cs">
+      <DependentUpon>upload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\upload.aspx.designer.cs">
+      <DependentUpon>upload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="pageclass\IP.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\Downloads\YYLog.ClassLibrary\YYLog.ClassLibrary\YYLog.ClassLibrary.csproj">
+      <Project>{c65021d1-2c32-45eb-a5b3-25d70fdb010f}</Project>
+      <Name>YYLog.ClassLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{4B94CE09-03AD-40D1-8394-C03E0BCDF43F}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{3B7C7DDE-8855-46BE-9493-8D358AEA74B6}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{3E18D6DF-B9E3-4DDD-B322-CA7AC3BCC7CE}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="api\ManagerHandler.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="api\Upload\UploadHandler.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="api\Material\MaterialHand.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="page\manager\MainPage.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="page\users\UsersPage.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="page\manager\ManagerPage.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="page\test\uploadimg.ashx" />
+    <Content Include="api\BidHandler.ashx" />
+    <Content Include="api\AgentHandler.ashx" />
+    <Content Include="page\fonts\iconfont.eot" />
+    <Content Include="page\fonts\iconfont.ttf" />
+    <Content Include="page\fonts\iconfont.woff" />
+    <Content Include="page\css\bootstrap\bootstrap-4.0.0.min.css" />
+    <Content Include="page\js\bootstrap\bootstrap-4.0.0.min.js" />
+    <Content Include="api\ImgHandler.ashx" />
+    <None Include="Properties\PublishProfiles\zenggq.pubxml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'TalentDebug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;TalentDebug</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>1710</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

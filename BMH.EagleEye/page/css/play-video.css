@@ -1,0 +1,221 @@
+.videoContent{
+    color:#333;
+}
+.videoContent h3{
+    line-height: 36px;
+    margin-top: 7px;
+    font-weight: normal;
+    color:#333;
+    font-family: 宋体;
+}
+.videoContent .leftSide{
+    width:650px;
+}
+.videoPlayer{
+    width:650px;
+    height:412px;
+    background-color: #666
+}
+
+.videoContent .infoArea .info{
+    width:320px;
+}
+.videoContent .infoArea h1{
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 50px;
+    margin-top: 4px;
+}
+.videoContent .infoArea .info p{
+    line-height: 18px;
+    height:55px;
+    overflow: hidden;
+}
+.videoContent .infoArea .other{
+    margin-top: 18px;
+}
+.videoContent .infoArea .other .img{
+    border-radius:50%;
+    width:48px;
+    height:48px;
+
+}
+.videoContent .infoArea .top{
+    padding-right:30px;
+}
+.videoContent .infoArea .channel{
+    font-size: 16px;
+    color:#f54336;
+    line-height: 26px;
+}
+.videoContent .infoArea .fans{
+    color:#888;
+    line-height: 16px;
+}
+.videoContent .infoArea .top div{
+    margin-left: 10px;
+}
+.videoContent .infoArea .download{
+    display: block;
+    width:93px;
+    height:35px;
+    background-color: #f54336;
+    color:#fff;
+    border-radius:6px;
+    line-height: 17px;
+    font-family: 宋体;
+    padding-left: 30px;
+    padding-top:1px;
+    position: relative;
+    margin-top: 10px
+}
+.videoContent .download em{
+    position: absolute;
+    /*display: block;*/
+    left:10px;
+    top:7px;
+    width:12px;
+    height:22px;
+    background:url(../images/tq-icon.png) no-repeat -394px 0;
+}
+
+.ad-area-1{
+    margin: 20px 0;
+}
+
+.videoPageTitle .title{
+    font-size: 20px;
+    color:#f54336;
+    float:left;
+    line-height: 37px;
+}
+.videoPageTitle .bg{
+    float:right;
+    width:560px;
+    height:37px;
+    background:url(../images/videoTitleLine.png) repeat-x 0 20px;
+}
+.comment{
+    font-family:宋体;
+}
+.comment li{
+    border-bottom:1px dashed #cecece;
+    padding:20px 0 25px 0;
+    overflow: hidden;
+}
+.comment li div{
+    float: left;
+    width:590px;
+    margin-left: 10px;
+}
+.comment li img{
+    border-radius:50%;
+    width:48px;
+    height:48px;
+    overflow: hidden;
+    float: left
+}
+.comment li .name{
+    color:#f54336;
+    line-height: 24px;
+    margin-right: 30px;
+}
+.comment li .time{
+    color:#999;
+    line-height: 24px;
+
+}
+.comment li p{
+    margin-top: 6px;
+    color:#666;
+    line-height: 1.4
+}
+
+.bottomDownload{
+    text-align: center; 
+    margin-top: 10px;
+}
+.bottomDownload button{
+    position: relative;
+    width:544px;
+    height:36px;
+    line-height: 36px;
+    border:0;
+    border-radius:6px;
+    color:#f54336;
+    font-size: 16px;
+    background:#f3f3f3;
+    FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#f7f7f7,endColorStr=e7e7e7); /*IE 6 7 8*/ 
+    background: -ms-linear-gradient(#f7f7f7,  #f1f1f1);        /* IE 10 */
+    background:-moz-linear-gradient(#f7f7f7,  #f1f1f1);/*火狐*/ 
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#f7f7f7), to(#f1f1f1));/*谷歌*/ 
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f7f7f7), to(#f1f1f1));      /* Safari 4-5, Chrome 1-9*/
+    background: -webkit-linear-gradient(top, #f7f7f7, #f1f1f1);   /*Safari5.1 Chrome 10+*/
+    background: -o-linear-gradient(top, #f7f7f7, #f1f1f1);  /*Opera 11.10+*/
+    box-shadow: 0 1px 0 #e7e7e7;
+    text-indent: 10px;
+}
+.bottomDownload button em{
+    position: absolute;
+    left: 121px;
+    top: 7px;
+    width: 12px;
+    height: 22px;
+    background: url(../images/tq-icon.png) no-repeat -406px 0;
+}
+.videoContent .rightSide{
+    width:310px;
+    
+}
+
+.videoContent .rightSide .bg{
+    width:220px;
+}
+.rightSide .videoPageTitle{
+    margin-bottom: 6px;
+}
+.rightSide li{
+    margin-bottom: 20px;
+}
+.rightSide li .img{
+    float:left;
+}
+.rightSide li div{
+    float:left;
+    width:180px;
+    margin-left: 14px;
+}
+.rightSide li .title{
+    color:#333;
+    line-height: 24px;
+    height:24px;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+.rightSide li em{
+    display:inline-block;
+    color:#bcbcbc;
+    margin-right: 42px;
+    margin-top: 4px
+}
+.rightSide li .count:before, .rightSide li .num:before {
+    content: '';
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url(../images/tq-icon.png) no-repeat;
+    margin-right: 3px;
+}
+.rightSide li .count:before {
+    background-position: -346px 0;
+}
+.rightSide li .num:before {
+    background-position: -360px 0;
+}
+.rightSide .ad-area-2{
+    width:326px;
+    height: 326px;
+}

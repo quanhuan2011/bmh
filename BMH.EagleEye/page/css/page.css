@@ -1,0 +1,23 @@
+﻿/*分页*/
+.pageSm{ width: 100%; height: 30px;line-height: 30px; margin:10px 0 10px 0;padding: 10px 0; float: left;display: inline-block;text-align: center;border-top: 1px solid #ddd;float: left; display: inline-block}
+.pageSm font{ color: #666; padding: 0 6px 0 0 ;}
+.pageSm  font label{  padding: 0 2px 0 2px ;}
+.pageSm span{ color: #f00; padding: 0 3px 0 3px;}
+.pageSm a{ background: #f1f1f1;border: 1px solid #ccc;line-height: 25px;text-align: center;color: #333;text-decoration: none;padding: 3px 6px; margin: 0 5px 0 0}
+.pageSm a:hover{ background: #3083eb;border: 1px solid #3083eb; color: #fff;text-decoration: none;}
+.pageSm a.disabled{ background: #f1f1f1;border: 1px solid #ccc;line-height: 25px;text-align: center;color: #333;text-decoration: none;padding: 3px 6px; margin: 0 5px 0 0}
+.pageSm a.disabled:hover{ background: #f1f1f1;border: 1px solid #ccc; color: #333;text-decoration: none;}
+
+.pageInfoManu{margin: 10px 0px; padding: 3px; text-align: center; color:#666}
+.pageInfoManu font{ color:#c00; padding:0 2px; font-weight:bold}
+.pageInfoManu span{ color:#333;padding:0 2px}
+
+.manu {	margin: 3px; padding: 3px; text-align: center;}
+.manu a {margin: 2px; padding: 2px 5px; border: 1px solid rgb(238, 238, 238); color: #445363; text-decoration: none;}
+.manu a:hover {	border: 1px solid #445363; background:#445363; color: #fff;}
+.manu a:active {border: 1px solid #445363; background:#445363; color: #fff;}
+.manu .current {margin: 2px; padding: 2px 5px; border: 1px solid #445363; color: #fff; font-weight: bold; background-color: #445363;}
+.manu .disabled {margin: 2px; padding: 2px 5px; border: 1px solid rgb(238, 238, 238); color: rgb(221, 221, 221);}
+
+.loadingPage_bg1 {background:none repeat scroll 0 0 #000;height:100%;left:0; /*:rgba(0,0,0,0.5);*/opacity:0.2;filter:alpha(opacity=20);width:100%;position:absolute;top:0px;z-index:110;}
+#loadingPage {display:block;font-weight:bold;font-size:12px;color:#595959;height:28px;left:50%;line-height:27px;margin-left:-74px;margin-top:-14px;padding:10px 10px 10px 50px;position:absolute;text-align:left;top:50%;width:148px;z-index:111;background:url(/img/loading.gif) no-repeat scroll 12px center #FFFFFF;border:2px solid #86A5AD;}

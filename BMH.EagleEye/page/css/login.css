@@ -1,0 +1,242 @@
+/*css reset*/
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,menu, nav, output, ruby, section, summary,
+time, mark, audio, video{margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}
+body{line-height: 1;min-width:1135px;background:#fff;font-family: "Microsoft Yahei";}
+ol, ul{list-style: none;}
+blockquote, q{quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after{content: '';content: none;}
+table{border-collapse: collapse;border-spacing: 0;}
+a{text-decoration: none;}
+body{min-width:1150px;overflow-x:hidden  }
+/*common*/
+.clearfix:after{content:'';display:block;clear:both;height:0;overflow:hidden;}
+.clearfix{zoom:1;}
+.container{width:1150px;margin:0 auto;}
+/*page*/
+.header-bg{background:url(../images/header-bg.jpg) no-repeat center top;width:100%;text-align: center;background-size:cover;position:relative;}
+.logo{text-align:center;}
+.logo img{margin:100px 0 50px;}
+.logo h1{text-indent:-9999em;background:url(http://yingyan.baomihua.com/img/logotxt.png) no-repeat center top;width:100%;height:119px;}
+
+.enter-btn{
+    display:inline-block;
+    width:202px;
+    height:30px;
+    line-height: 30px;
+    border:1px solid #00aba3;
+    background: rgba(255,255,255,.1);
+    text-align: center;
+    margin:20px auto 0 auto;
+    color:#00aba3;
+    border-radius:2px;
+    -webkit-transition: all .2s;
+    transition:all .2s;
+    font-size: 14px;
+}
+.enter-btn:hover{
+    background: #00aba3;
+    color:#fff;
+}
+.loginArea{
+    width:1150px;
+    position: absolute;
+    top:43%;
+    margin-top: -17px;
+    left:50%;
+    margin-left: -575px;
+    font-size: 0;
+    text-align: center
+}
+.loginArea input{
+    width: 250px;
+    height: 35px;
+    line-height: 35px;
+    box-sizing:border-box;
+    border: none;
+    border-radius: 1px;
+    outline: none;
+    font-size: 14px;
+    font-family:微软雅黑;
+    margin-right: 10px;
+    text-indent:10px;
+}
+.loginArea button,.loginArea .submit_btn{
+    width: 250px;
+    height: 35px;
+    line-height: 35px;
+    box-sizing: border-box;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    line-height: 13px;
+    letter-spacing: 5px;
+    background: #00a6b3;
+    border:0;
+    font-size: 14px;
+    font-family: 微软雅黑;
+    outline: 0;
+    transition:all .2s;
+}
+.loginArea button,.loginArea .submit_btn:hover{
+    background: #05bfce;
+}
+.targers{
+    display:block;
+    width:448px;
+    height:63px;
+    background: url(../images/ziti.png) no-repeat center;
+    text-align: center;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left: -224px
+}
+#recommend{
+    width:1150px;
+    position: absolute;
+    bottom:40px;
+    left:50%;
+    margin-left: -575px;
+}
+#recommend-title {
+    color: #fff;
+    font-size: 14px;
+    width: 260px;
+    height: 35px;
+    margin: 80px auto 20px auto;
+    position: relative;
+}
+#recommend-title .title {
+    width: 100px;
+    position: absolute;
+    top: 28px;
+    left: 50%;
+    margin-left: -50px;
+    text-align: center;
+}
+#recommend-title #left-line {
+    display:inline-block;
+    height: 20px;
+    width: 90px;
+    position: absolute;
+    bottom: 0;
+    border-bottom: 1px solid #fff;
+    opacity: .2;
+    filter: alpha(opacity=20);
+    left:0;
+}
+#recommend-title #right-line {
+    display:inline-block;
+    height: 20px;
+    width: 90px;
+    position: absolute;
+    bottom: 0;
+    border-bottom: 1px solid #fff;
+    opacity: .2;
+    filter: alpha(opacity=20);
+    right:0;
+}
+#recommend li{
+    float:left;
+    width:341px;
+    height:75px;
+    text-align: left;
+    color:#fff;
+    font-size: 13px;
+    margin:10px;
+    padding:10px;
+    line-height: 20px;
+    border-radius:6px;
+    -ms-animation-delay: .6s;
+    -o-animation-delay: .6s;
+    -moz-animation-delay: .6s;
+    -webkit-animation-delay: .6s; 
+    background:#25a7ac;
+    background: rgba(37,167,172,.4);
+    border:1px solid #25a7ac;
+    letter-spacing: 1px;
+   /* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#25a7ac), color-stop(100%,#34b6a7));
+    background: -webkit-linear-gradient(top,  #25a7ac 0%,#34b6a7 100%);
+    background: linear-gradient(to bottom,  #25a7ac 0%,#34b6a7 100%);*/
+}
+#recommend li.two{
+    -ms-animation-delay: .4s;
+    -o-animation-delay: .4s;
+    -moz-animation-delay: .4s;
+    -webkit-animation-delay: .4s; 
+
+}
+#recommend li.three{
+    -ms-animation-delay: .2s;
+    -o-animation-delay: .2s;
+    -moz-animation-delay: .2s;
+    -webkit-animation-delay: .2s; 
+}
+#recommend li h3{
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 8px;
+    font-family:黑体;
+}
+.character{padding:90px 0 40px;}
+.character .tit{text-indent:-9999em;background:url(http://yingyan.baomihua.com/img/character.png) no-repeat center top;width:100%;height:88px;}
+.manage-type{padding:90px 0 0;}
+.manage-type li{float:left;text-align:center;width:33.333%;font-weight:500;color:#666;}
+/*.manage-type li.first{margin:0 162px 0 50px;}
+.manage-type li.second{margin:0 156px 0 0;}*/
+.manage-type li h3{width:238px;margin:0 auto;padding:186px 0 10px;font:normal 26px "SimHei";}
+.manage-type li p{font-size:18px;line-height:32px;text-align:left;font-family:"Microsoft Yahei";}
+.manage-type li.first h3{background:url(http://yingyan.baomihua.com/img/char1.png) no-repeat center top;}
+.manage-type li.second h3{background:url(http://yingyan.baomihua.com/img/char2.png) no-repeat center top;}
+.manage-type li.third h3{background:url(http://yingyan.baomihua.com/img/char3.png) no-repeat center top;}
+.graybg{width:100%;background:#fff;}
+.partner{padding:75px 0 75px;}
+.partner .tit{text-indent:-9999em;width:100%;height:92px;background:url(http://yingyan.baomihua.com/img/partner.png) no-repeat center top;}
+.partner-listWrap{width:1150px;overflow:hidden;}
+.partner-list{width:1150px;padding-top:30px;}
+.partner-list li{float:left;width:237px;height:88px;text-align:center;margin:38px 67px 0 0;text-align: center;;
+vertical-align: middle}
+.partner-list li.parts{margin-right: 0}
+.container-box{
+    width:100%;
+    background-color: #fff
+}
+.consulting{padding:73px 0 74px;}
+.consulting .tit{background:url(http://yingyan.baomihua.com/img/consulting.png) no-repeat center top;height:85px;}
+.consulting li{color:#888;font-size:26px;font-family:"Microsoft Yahei";}
+.consulting li.first h3{background:url(http://yingyan.baomihua.com/img/mob.png) no-repeat center top;}
+.consulting li.second h3{background:url(http://yingyan.baomihua.com/img/qq.png) no-repeat center top;}
+.consulting li.third h3{background:url(http://yingyan.baomihua.com/img/mail.png) no-repeat center top;}
+.footer-bg{background:#575555;width:100%;}
+.contact-us{padding:72px 0 53px;color:#fff;font:normal 24px "Microsoft Yahei";}
+.contact-det li{float:left;}
+.contact-det h3{padding:0 0 20px 0;}
+.contact-det p{line-height:30px;font-size:16px;}
+.contact-det li.first{width:432px;}
+.contact-det li.second{width:476px;}
+.contact-det li.third img{margin-left:20px;}
+.contact-us .txt{font-size:14px;padding:60px 0 0;text-align:center;}
+.sidebar{position:fixed; top: 50%; right: 50%; width: 50px; height:100px; text-align: center; margin-right:-670px; margin-top:-50px;font-size:14px;}
+.sidebar a{float:left;}
+.sidebar a,.sidebar span{display:inline-block;}
+.sidebar .to-top{width:48px;color:#666;height:42px;padding-top:8px;border:1px solid #d7dce0;background:#fff url(http://yingyan.baomihua.com/img/topgray.png) no-repeat center 8px;}
+.sidebar .to-top:hover{color:#fff;background:#3ca9e7 url(http://yingyan.baomihua.com/img/top.png) no-repeat center 8px;}
+.sidebar .to-top span{width:30px;padding-top:22px;}
+.sidebar .contact-us-link{width:48px;height:48px;border:1px solid #d7dce0;margin-top:-1px;color:#666;background:#fff;}
+.sidebar .contact-us-link span{width:30px;margin:8px;line-height:18px;}
+.sidebar .contact-us-link:hover{color:#fff;background:#3ca9e7;}
+/*animate*/
+@-webkit-keyframes fadeInUp{0%{opacity:0;-webkit-transform:translateY(100px);transform:translateY(100px)}100%{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)};}
+@-webkit-keyframes fadeInDown{0%{opacity:0;-webkit-transform:translateY(-100px);transform:translateY(-100px)}100%{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)};}
+@-webkit-keyframes fadeInRight{0%{opacity:0;-webkit-transform:translateX(100px);transform:translateX(100px)}100%{opacity:1;-webkit-transform:translateX(0);transform:translateX(0)};}
+@-webkit-keyframes fadeInLeft{0%{opacity:0;-webkit-transform:translateX(-100px);transform:translateX(-100px)}100%{opacity:1;-webkit-transform:translateX(0);transform:translateX(0)};}
+.fadeInUp{-webkit-animation-name:fadeInUp;animation-name:fadeInUp;}
+.fadeInDown{-webkit-animation-name:fadeInDown;animation-name:fadeInDown;}
+.rotateIn{-webkit-animation-name:rotateIn;animation-name:rotateIn;}
+.animated{-webkit-animation-duration:.5s;animation-duration:.5s;-webkit-animation-fill-mode:both;animation-fill-mode:both;}
+@-webkit-keyframes bounceInLeft{0%,100%,60%,75%,90%{-webkit-animation-timing-function:cubic-bezier(0.215,.61,.355,1);animation-timing-function:cubic-bezier(0.215,.61,.355,1)}0%{opacity:0;-webkit-transform:translate3d(-3000px,0,0);transform:translate3d(-3000px,0,0)}60%{opacity:1;-webkit-transform:translate3d(25px,0,0);transform:translate3d(25px,0,0)}75%{-webkit-transform:translate3d(-10px,0,0);transform:translate3d(-10px,0,0)}90%{-webkit-transform:translate3d(5px,0,0);transform:translate3d(5px,0,0)}100%{-webkit-transform:none;transform:none}}@keyframes bounceInLeft{0%,100%,60%,75%,90%{-webkit-animation-timing-function:cubic-bezier(0.215,.61,.355,1);animation-timing-function:cubic-bezier(0.215,.61,.355,1)}0%{opacity:0;-webkit-transform:translate3d(-3000px,0,0);transform:translate3d(-3000px,0,0)}60%{opacity:1;-webkit-transform:translate3d(25px,0,0);transform:translate3d(25px,0,0)}75%{-webkit-transform:translate3d(-10px,0,0);transform:translate3d(-10px,0,0)}90%{-webkit-transform:translate3d(5px,0,0);transform:translate3d(5px,0,0)}100%{-webkit-transform:none;transform:none}}.bounceInLeft{-webkit-animation-name:bounceInLeft;animation-name:bounceInLeft}
+@-webkit-keyframes fadeInRightBig{0%{opacity:0;-webkit-transform:translate3d(2000px,0,0);transform:translate3d(2000px,0,0)}100%{opacity:1;-webkit-transform:none;transform:none}}@keyframes fadeInRightBig{0%{opacity:0;-webkit-transform:translate3d(2000px,0,0);transform:translate3d(2000px,0,0)}100%{opacity:1;-webkit-transform:none;transform:none}}.fadeInRightBig{-webkit-animation-name:fadeInRightBig;animation-name:fadeInRightBig}
